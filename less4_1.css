@@ -49,6 +49,7 @@ ul {
 .item {
 	display: inline-block;
 	margin-right: 40px;
+	margin-top: 35px;
 }
 
 .item a {
@@ -69,6 +70,12 @@ ul {
 		position: relative;
 		cursor: pointer;
 	}
+	
+.maxwidth {
+	max-width: 1130px;
+	margin: 0 auto;
+	background-color: black;
+}
 .portfolio-detail {
 	position:absolute;
 	top: 0;
@@ -99,14 +106,33 @@ ul {
 		
 	}
 	
-.item1{
+.active {
+    display: none;
+}
+
+.non-active {
+    display: block;
+}
+
+.item1:hover {
+    background-color: red;
+}
+
+.item1:hover .active {
+    display: block;
+}
+
+.item1:hover .non-active {
+    display: none;
+}
+
+	.item1{
 	display: inline-block;
-	border-radius: 30px;
 	border: 1px solid gray;
-	margin: 10px;
-	position: relative;
-		
-	
+	width: 42px;
+	border-radius: 21px;
+	height: 42px;
+	cursor: pointer;
 	
 	}
 	
@@ -198,33 +224,60 @@ button {
 	margin: 0 auto;
 	text-align: center;
 }
-.slide5 {
-	margin: 0 auto;
-	text-align: center;
-	height: auto;
-	background-color: black;
-	width: 90%;	
+
+.slide5_11 {
+	padding-left: 24px;
 }
+
 .slide5_1 {
 	display: inline-block;	
 	position: relative;
-	margin: 0 auto;
-	line-height: 0;
-	
-
+	padding: 0;
+	margin: 0;
+	float: left;
+	background-color: none;
 }
 .img5_1 {
-	width: 220px;
+	width: 290px;
 	height: auto;
-	display: inline-block;
+	}
 	
-}
 .slide5_2 {
 	margin: 0 auto;
-	width: 100%;
+	width: 1450px;
 	height: auto;
 	color: silver;
+	background-color: black;
 	
+}
+
+.tst-img{
+ height:5px;
+ margin:30px;
+ min-width:50px;
+}
+.f-line{
+ height:2px;
+ width:50px;
+ background: silver;
+ display: inline-block;
+ vertical-align:middle;
+
+}
+.circle{
+ width:10px;
+ height:10px;
+ border-radius:5px;
+ background: silver;
+ display: inline-block;
+ vertical-align:middle;
+}
+.s-line{
+ height:2px;
+ width:50px;
+ background: silver;
+ display: inline-block;
+ vertical-align:middle;
 }
 
 
