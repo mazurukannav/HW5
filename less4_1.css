@@ -46,6 +46,177 @@ ul {
 	
 	
 }
+ .main-navigation1 {
+    width: 110px; /* Ширина меню */
+    list-style: none; /* Для списка убираем маркеры */
+    margin: 0; /* Нет отступов вокруг */
+    padding: 0; /* Убираем поля вокруг текста */
+	display: none;
+	float: right;
+	margin-top: 100px;
+	margin-right: 0px;
+    }
+   
+/*.ic-menu  .main-navigation1 {
+    position: absolute;
+    display: none; 
+	top: 50px;
+	right: 0;
+   }*/
+ 
+ 
+   
+.ic-menu {
+	display: none;
+	float: right;
+	width: 25px;
+	height: auto;
+	margin-top: 100px;
+	margin-right: 35px;
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1470px){
+	.ic-menu {
+		display: block;
+		cursor: pointer;
+		
+	}
+	
+	.contact {
+		display: none;
+	}
+	
+	.ic-menu:hover .main-navigation1 {
+	display: block;
+	}
+	
+		
+}
+
+/*@media screen and (max-width: 1370px){
+	.ic-menu {
+		display: block;
+	}
+	
+	.contact {
+		display: none;
+	}
+	.MasterPiecees {
+		display: none;
+	}
+	
+	.ic-menu:hover .contact  {
+		display: block;
+	}
+	
+	.ic-menu:hover .MasterPiecees {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+		.ic-menu {
+		display: block;
+	}
+	
+	.contact {
+		display: none;
+	}
+	.MasterPiecees {
+		display: none;
+	}
+	.MyServices {
+		display: none;
+	}
+}
+
+
+
+@media screen and (max-width: 1170px){
+		.ic-menu {
+		display: block;
+	}
+	
+	.contact {
+		display: none;
+	}
+	.MasterPiecees {
+		display: none;
+	}
+	.MyServices {
+		display: none;
+	}
+	.Albums {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 1070px){
+		.ic-menu {
+		display: block;
+	}
+	
+	.contact {
+		display: none;
+	}
+	.MasterPiecees {
+		display: none;
+	}
+	.MyServices {
+		display: none;
+	}
+	.Albums {
+		display: none;
+	}
+	.AboutMe {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 950px){
+		.ic-menu {
+		display: block;
+	}
+	
+	.contact {
+		display: none;
+	}
+	.MasterPiecees {
+		display: none;
+	}
+	.MyServices {
+		display: none;
+	}
+	.Albums {
+		display: none;
+	}
+	.AboutMe {
+		display: none;
+	}
+	.Home {
+		display: none;
+	}
+}*/
+
+.item_1 {
+	display: inline-block;
+	margin-right: 40px;
+	margin-top: 15px;
+}
+
+.item_1 a {
+	text-decoration: none;
+	color:white;
+	font-size: 15px;
+	text-transform: uppercase;
+	
+}
+
 .item {
 	display: inline-block;
 	margin-right: 40px;
