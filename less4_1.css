@@ -96,7 +96,7 @@ ul {
 		
 }
 
-/*@media screen and (max-width: 1370px){
+@media screen and (max-width: 1370px){
 	.ic-menu {
 		display: block;
 	}
@@ -201,7 +201,7 @@ ul {
 	.Home {
 		display: none;
 	}
-}*/
+}
 
 .item_1 {
 	display: inline-block;
