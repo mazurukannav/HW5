@@ -19,6 +19,10 @@
 	background-color: silver;
 	width: 100px;	
 }*/
+section {
+	width:100%;
+	clear:both;
+}
 
 body {
 	padding: 0;
@@ -46,23 +50,8 @@ ul {
 	
 	
 }
- .main-navigation1 {
-    width: 110px; /* Ширина меню */
-    list-style: none; /* Для списка убираем маркеры */
-    margin: 0; /* Нет отступов вокруг */
-    padding: 0; /* Убираем поля вокруг текста */
-	display: none;
-	float: right;
-	margin-top: 100px;
-	margin-right: 0px;
-    }
-   
-/*.ic-menu  .main-navigation1 {
-    position: absolute;
-    display: none; 
-	top: 50px;
-	right: 0;
-   }*/
+
+ 
  
  
    
@@ -76,131 +65,49 @@ ul {
 	cursor: pointer;
 }
 
+.main-navigation1 {
+	top: 50px;
+	right: 0;
+	position:absolute;
+	display: none;
+	
+}
 
 
-@media screen and (max-width: 1470px){
+
+@media screen and (max-width: 1000px){
 	.ic-menu {
 		display: block;
 		cursor: pointer;
 		
 	}
 	
-	.contact {
+	.main-navigation {
 		display: none;
 	}
 	
-	.ic-menu:hover .main-navigation1 {
+	.ic-menu:hover .main-navigation1{
 	display: block;
-	}
 	
+		}
+	.ic-menu:hover .item_ic  {
+		display: block;
+	}
 		
 }
 
-@media screen and (max-width: 1370px){
-	.ic-menu {
-		display: block;
-	}
+.item_ic {
 	
-	.contact {
-		display: none;
-	}
-	.MasterPiecees {
-		display: none;
-	}
-	
-	.ic-menu:hover .contact  {
-		display: block;
-	}
-	
-	.ic-menu:hover .MasterPiecees {
-		display: block;
-	}
+	margin-right: 40px;
+	margin-top: 35px;
 }
 
-@media screen and (max-width: 1270px) {
-		.ic-menu {
-		display: block;
-	}
+.item_ic a {
+	text-decoration: none;
+	color:white;
+	font-size: 15px;
+	text-transform: uppercase;
 	
-	.contact {
-		display: none;
-	}
-	.MasterPiecees {
-		display: none;
-	}
-	.MyServices {
-		display: none;
-	}
-}
-
-
-
-@media screen and (max-width: 1170px){
-		.ic-menu {
-		display: block;
-	}
-	
-	.contact {
-		display: none;
-	}
-	.MasterPiecees {
-		display: none;
-	}
-	.MyServices {
-		display: none;
-	}
-	.Albums {
-		display: none;
-	}
-}
-
-
-@media screen and (max-width: 1070px){
-		.ic-menu {
-		display: block;
-	}
-	
-	.contact {
-		display: none;
-	}
-	.MasterPiecees {
-		display: none;
-	}
-	.MyServices {
-		display: none;
-	}
-	.Albums {
-		display: none;
-	}
-	.AboutMe {
-		display: none;
-	}
-}
-
-
-@media screen and (max-width: 950px){
-		.ic-menu {
-		display: block;
-	}
-	
-	.contact {
-		display: none;
-	}
-	.MasterPiecees {
-		display: none;
-	}
-	.MyServices {
-		display: none;
-	}
-	.Albums {
-		display: none;
-	}
-	.AboutMe {
-		display: none;
-	}
-	.Home {
-		display: none;
-	}
 }
 
 .item_1 {
@@ -234,6 +141,8 @@ ul {
 .wrap {
 	padding-top: 25px;
 	text-align: center;
+	max-width: 1240px;
+	margin: 0 auto;
 	}
 	
 .portfolio-item {
@@ -332,10 +241,9 @@ ul {
 }
 
 .buket {
-	width: 20%px;
-	height: auto;
+	float:left;
 	text-align: left;
-	margin-left:100px;
+	margin-left:10%;
 	display: inline-block;
 }
 .buket_text {
@@ -371,7 +279,7 @@ button {
 	width: 50%;
 	height: auto;
 }
-	.photograph {
+.photograph {
 	width: 600px;
 	height: auto;
 	padding-top: 45px;
@@ -396,26 +304,33 @@ button {
 	text-align: center;
 }
 
-.slide5_11 {
-	padding-left: 24px;
-}
 
-.slide5_1 {
+
+.slide5_1 {/* 
 	display: inline-block;	
-	position: relative;
+	background-color: none; */
+	width:inherit;
+	clear: right;
+	padding: 0;
+}
+.slide5_1 li {
 	padding: 0;
 	margin: 0;
 	float: left;
-	background-color: none;
+	width: 20%;
+	display: inline-block;
 }
 .img5_1 {
-	width: 290px;
+	width: 100%;	
+	/*width: 248px;*/
 	height: auto;
 	}
 	
 .slide5_2 {
 	margin: 0 auto;
-	width: 1450px;
+	padding: 0;
+	padding-top: 20px;
+	/*width: 1240px;*/
 	height: auto;
 	color: silver;
 	background-color: black;
@@ -452,3 +367,6 @@ button {
 }
 
 
+.clearfix {
+	clear:both;
+}
